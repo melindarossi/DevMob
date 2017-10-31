@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h1>{{app.nom}} {{app.version}}</h1>
+
+  <ion-item>
+    <ion-label floating>Username</ion-label>
+    <ion-input type="text" [(ngModel)]="app.nom"></ion-input><!--permet le data binding-->
+  </ion-item>
+
+  <ion-item>
+    <ion-label floating>Version</ion-label>
+    <ion-input type="Number" [(ngModel)]="app.version"></ion-input>
+  </ion-item>
+
+<button ion-button color="light" (click)='Clickme()'>Appuyer moi dessus !</button>
+  <p>
+    {{clickmessage}}
+  </p>
+
+</ion-content>
